@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html class="ie ie8" lang="es">
+    <head>
+    <meta charset="utf-8">
+    <title>Inicia sesión</title>
+
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="eE6IasVskZN8sNBguoVNFQ9UAIWcmpGZIjRUghw2_8Q">
+    <meta name="domain-suggester-prompt" content="¿Quiso decir {{corrected_email}}?">
+    <meta name="api-uri" content="https://api.squareup.com">
+    <meta name="max-idle-minutes" content="30">
+    <meta name="max-two-factor-minutes" content="2147483647">
+    <meta name="referrer" content="origin">
+    <link href="https://multipassfe-production-f.squarecdn.com/static/rTvnWmmmOXJ9tAYkJXkXiLx1eY4/stylesheets/login.css" media="screen" rel="stylesheet">
+    
+    <style type="text/css">
+
+        body{
+          background-color: #D6DBDF ;
+          font-family: 'Helvetica';
+          font-size: 16px;
+        }
+        </style>
+  </head>
+
+  <body class="login-page ">
+
+    <div id="content" class="fade-in l-table">
+      <div id="login-wrapper" class="l-table-row">
+        <div class="l-table-cell">
+          <section class="login-modal">
+            <div class="login-modal-user-pass">
+                <div align="center"><img src="img/logo1.png" width="200"
+                    height="100">
+                </div>
+                <br>
+              <div class="login-modal-title">
+                <span class="login-modal-password-text">¿Contraseña olvidada?</span>
+              </div>
+
+
+
+              <div class="login-modal-content">
+
+                <form accept-charset="UTF-8" action="home.html"
+                      class="signin-page-form" name="sign-in-form" method="post" novalidate="novalidate">
+                  <div class="field email-field fade-label">
+                    <label class="text" for="email">CURP</label>
+                    <input autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="autofocus"
+                           class="text" id="CURP" name="email" size="30" spellcheck="false" type="email"
+                           value="">
+                  </div>
+
+                  <div class="message-box-error-wrapper">
+                    <div class="message-box-error"></div>
+                  </div>
+                  <div class="field password-field fade-label">
+                    <label class="text" for="password">Contraseña</label>
+                    <input class="text" id="password" name="password" size="30" autocomplete="off"
+                           type="password" value="">
+                    <div class="login-forgot-password-wrapper">
+                      <a href="#" class="forgot-password-link track-event">¿Contraseña olvidada?</a>
+                    </div>
+                  </div>
+
+                  <div style="clear: both"></div>
+
+                  <div id="captcha" class="g-recaptcha submit-button"></div>
+
+                  <div class="submit-button full-length-submit-button">
+                    <button id="sign-in-button" name="sign-in-button" type="submit" class="btn btn-blue track-event">
+                      <span class="button-text">Iniciar sesión</span>
+                    </button>
+                  </div>
+                 
+                </form>
+              </div>
+            </div>
+            
+
+          
+
+
+          </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+container{
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://s3.amazonaws.com/agenda-beta.net/Aeropuerto_Revista_Agenda.jpg);
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+#user {
+  width: 250px;
+  height: auto;
+}
+.modal-title{
+    font-family:monospace;
+    font-size: Auto;
+color: rgb(0, 4, 255);
+}
+/**/
+.modal-body{
+    color: black;
+    padding: 2px;
+    font-size: 90%
+    
+}
+h4{
+    font-family:fantasy;
+    
+    font-size: auto;
+    
+}
+h6{
+    
+    font-size: 30px;
+    color: rgb(38, 0, 255);
+}

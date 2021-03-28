@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      
+<!--icon Sitio web-->
+      <link rel="icon" href="/img/Icono_Expedi.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+      
+      
+
+    <title>Mi Expediente</title>
+  </head>
+  <body>
+    <img src="img/iconExp.jpg" width="70" height="70" alt="expedimg" loading="lazy" >
+    <center>
+      <h1 id="texto1"> 📝Expediente</h1>
+       <h3 id="texto3"> Centro Medico: -----------</h3>
+      
+        </center>
+      <br>
+      <div class="Container">
+          <div class="table-responsive">
+      <table border="1" class="table table-hover table-bordered ">
+          <thead class="thead-dark">
+              <tr>
+                  <th>Datos del Paciente:</th>
+                  
+              </tr>
+              
+          </thead>
+          <tbody>
+            <tr>
+                <th>Nombre:</th>
+                
+            </tr>
+            <tr>
+                <td>A.Paterno-A-Materno-Nombres(s) </td>
+                
+            </tr>
+              <tr>
+                <th>CURP:</th>
+                
+            </tr>
+            <tr>
+                <td>------------------ </td>
+                
+            </tr>
+            <tr>
+                <th>Edad:</th>
+                
+            </tr>
+            <tr>
+                <td>--  </td>
+                
+            </tr>
+            <tr>
+                <th>Genero:</th>
+                
+            </tr>
+            <tr>
+                <td>------</td>
+                
+            </tr>
+          </tbody>
+          <thead class="thead-dark">
+              <tr>
+                  <th>Fecha de consulta:</th>
+                  
+                 
+              </tr>
+          </thead>
+          
+          <tbody>
+              <tr>
+                  <td>
+                      
+<p id="dia"></p>
+  <p id="mes"></p>
+     <p id="año"></p>
+
+<script>
+var d = new Date();
+document.getElementById("dia").innerHTML = d.getDate()+" de Marzo "+" del "+d.getFullYear();
+                                                    //+(d.getMonth()+1)                                             
+</script>
+            
+
+
+               
+
+                  </td>
+                  
+              </tr>
+          </tbody>
+         
+           <thead class="thead-dark">
+              <tr>
+                   <th>Hora de consulta:</th>
+                  
+                 
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                                    
+<p id="horas"></p>
+  <p id="minutos"></p>
+     
+
+<script>
+var d = new Date();
+document.getElementById("horas").innerHTML = d.getHours()+" horas "+ (d.getMinutes())+" minutos ";
+</script>
+            
+  
+
+                     </td>
+                  
+              </tr>
+          </tbody>
+          </table>
+              <br>
+              <div class="Table 2">
+              <table border="1" class="table table-hover table-bordered ">
+                  <thead>
+              
+              <tr>
+                <th>Vacunas aplicadas</th>
+                <th>Fecha</th>
+                <th>Vacunas Faltantes</th>
+                <th>Fecha</th>
+                
+                
+            </tr>
+            
+          </thead>
+          
+          <tbody>
+              <tr>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+                  
+              </tr>
+          </tbody>
+           
+          <tbody>
+              <tr>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+
+              </tr>
+          </tbody>
+                  
+          <tbody>
+              <tr>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+
+              </tr>
+          </tbody>
+    <tbody>
+              <tr>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+                  <td>___________</td>
+                  <td>--/--/----</td>
+
+              </tr>
+          </tbody>
+           
+        
+              </table>
+                  <br>
+                  <br>
+                  </div>
+
+
+                  <div class="Table 2">
+                    <table border="1" class="table table-hover table-bordered ">
+                        <thead>
+                    
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Diagnosticos</th>
+                      <th>Seguimiento de Nutricion</th>
+                      <th>Estado de salud Actual</th>
+                      <th>Datos Generales- Cita Medica</th>
+                      
+                      
+                  </tr>
+                  
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>28/03/2021</td>
+                        <td>___________</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            Altura:
+                            <br>
+                            Peso:
+                            <br>
+                            IMC:
+                            <br>
+                            P.Arterial:
+                            <br>
+                            Temperatura:
+
+                        </td>
+                        
+                    </tr>
+                </tbody>
+                 
+                <tbody>
+                    <tr>
+                        <td>29/03/2021</td>
+                        <td>___________</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            Altura:
+                            <br>
+                            Peso:
+                            <br>
+                            IMC:
+                            <br>
+                            P.Arterial:
+                            <br>
+                            Temperatura:
+
+                        </td>
+                    </tr>
+                </tbody>
+                        
+                <tbody>
+                    <tr>
+                        <td>30/03/2021</td>
+                        <td>___________</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            Altura:
+                            <br>
+                            Peso:
+                            <br>
+                            IMC:
+                            <br>
+                            P.Arterial:
+                            <br>
+                            Temperatura:
+
+                        </td>
+                    </tr>
+                </tbody>
+          <tbody>
+                    <tr>
+                        <td>31/03/2021</td>
+                        <td>___________</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            Altura:
+                            <br>
+                            Peso:
+                            <br>
+                            IMC:
+                            <br>
+                            P.Arterial:
+                            <br>
+                            Temperatura:
+
+                        </td>
+                    </tr>
+                </tbody>
+                 
+              
+                    </table>
+                        <br>
+                        <br>
+                        </div>
+              </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+      
+  </body>
+</html>

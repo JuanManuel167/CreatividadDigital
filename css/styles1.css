@@ -1,0 +1,233 @@
+
+* {
+    font-family:Helvetica;
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+  
+    }
+    h1{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-size: auto;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(194, 172, 172, 0.1), 0 1px 3px rgba(248, 246, 246, 0.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(241, 246, 248, 0.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        color: #135ece;
+        text-align:right;
+        font-family:fantasy;
+        font-size: 40px;
+        
+        }
+  body{
+    /*background-image:url('https://i.imgur.com/gSRjtFO.jpg');*/
+    background: linear-gradient(#d6d6d6, #e97f28);
+    background-color:#74bcdd;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 4%;
+    margin-block-end: 3%;
+    background-attachment:fixed;
+  }
+  
+  /*Esto define la burbuja gris en la que se agrupan la cabecera y el menu de navegación*/
+  #cabeceraynav{
+    background-color:white;
+    
+    margin-top: 20px;
+    margin-left:10%;
+    margin-right:15%;
+    min-height:138px;
+    padding-top: 20px;
+    border-radius:100px;
+    box-shadow: 0px 10px 5px #888888;
+    }
+  
+  
+  /*La imagen de cabecera en realidad es un div redondeado que tiene a la imagen por fondo. Si no, la imagen no se podría redondear.*/
+  #imagenCabecera{
+      
+    margin-left:auto;
+    margin-right:auto;
+    background-image:url('/Img/log2.png');
+ 
+    height:70px;
+    width: 245px;
+    border-radius: 300px;
+    -moz-border-radius: 300px;
+    -webkit-border-radius: 300px;
+    box-shadow: 0px 10px 5px #888888;
+    
+    
+    }
+  /*Esto asegura la coherencia de tamaño de los diferentes botones del menu de navegación*/
+  li{
+    min-width:130px;
+    
+    }
+  
+  /*La clase .nav usada de aqui en adelante se refiere al <ul> que anida todo el menu de navegacion */
+  
+  
+  /*Esto centra el menu de navegación horizontalmente dentro de la cabecera*/
+  .nav{
+    margin-left:15%;
+    margin-right:15%;
+    }
+  /*
+  Esto define los elementos de primer nivel del menu. Las lineas de transition la animacion de transicion para el cambio de color en el hover*/
+  .nav > li{
+    margin-right:1px;
+    margin-left: 1px;
+    float:left;
+    -webkit-transition: all 0.7s ease-in-out;
+      -moz-transition: all 0.7s ease-in-out;
+      -o-transition: all 0.7s ease-in-out;
+      transition: all 0.7s ease-in-out;
+      }
+  
+  .nav li a {
+    display:block;
+    color:white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+      -moz-transition: all 0.7s ease-in-out;
+      -o-transition: all 0.7s ease-in-out;
+      transition: all 0.7s ease-in-out;
+    }
+  
+  /*Los dos siguientes nav hacen que la lista tenga extremos redondeados*/
+  .nav > li:first-child{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding-left: 25px;
+  }
+  
+  .nav > li:last-child{
+    border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding-right: 25px;
+   }
+  
+  
+  /*Esto le da sombra a los elementos del submenú*/
+  .nav li ul li{
+    box-shadow: 0px 10px 5px #888888;
+    }
+  
+  /*Esto se encarga de ocultar los submenus (mientras no haya hover) y de que se coloquen en su lugar*/
+  
+  .nav li ul {
+    height:auto;
+    max-height:0px;
+    overflow:hidden;
+    -webkit-transition: all 0.7s ease-in-out;
+      -moz-transition: all 0.7s ease-in-out;
+      -o-transition: all 0.7s ease-in-out;
+      transition: all 0.7s ease-in-out;
+  
+    }
+  /* el siguiente bloque desactivado daria a los submenus un final redondeado. Se ha eliminado de momento por estetica.*/
+  
+  /*.nav li ul > li:last-child {
+    border-bottom-right-radius:20px;
+      border-bottom-left-radius: 20px;
+      padding-bottom:20px;
+   
+    }
+  nav li ul li ul li:first-child {
+  
+      border-top-right-radius:20px;
+      padding-top:20px;
+  
+    }
+    */
+  
+  /*Esto hace aparecer los submenús en hover*/
+  .nav li:hover > ul {
+    max-height:300px;
+    }
+  .nav li ul li ul {
+      right:-160px;
+      top:0;
+      }
+  /*Esto limpia la propiedad float al acabar la cabecera*/
+  #findelheader {
+    clear:both;
+    }
+  
+  
+  
+  
+  .primerelemento{
+    background-color:#ce4813;
+    
+    }
+  .primerelemento:hover{
+    background-color:#F86135;
+  }
+  
+  .segundoelemento{
+    background-color:#F89F35;
+    }
+  .segundoelemento:hover{
+    background-color:#F86135;
+  }
+  .primersubmenu{
+    background-color:#F89F35;
+  }
+  .primersubmenu:hover{
+    background-color:#F86135;
+  }
+  .tercerelemento{
+    background-color:#F89F35;
+  
+    }
+  .tercerelemento:hover{
+    background-color:#F86135;
+  }
+  .segundosubmenu{
+    background-color:#F89F35;
+  }
+  .segundosubmenu:hover{
+    background-color:#F86135;
+  }
+  .cuartoelemento{
+    background-color:#F89F35;
+    }
+  .cuartoelemento:hover{
+    background-color:#F86135;
+  }
+  .tercersubmenu{
+    background-color:#F89F35;
+  }
+  .tercersubmenu:hover{
+    background-color:#F86135;
+    
+  }
+  .quintoelemento{
+    background-color:#F86135;
+    }
+  .quintoelemento:hover{
+    background-color:#F89F35;
+  }
+
+  .footer {
+    background-color: #eb561c;
+    background-image: linear-gradient(160deg, #f77104 0%, #eca60e 127%);
+  }
+  h6{
+    color:#f5f5f5;
+    text-align: center;
+    font-size: auto;
+
+}
